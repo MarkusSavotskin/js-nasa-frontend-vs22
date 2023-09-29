@@ -5,3 +5,12 @@
 .App h1 {
   text-decoration-line: underline;
 }
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+}
+

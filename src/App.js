@@ -1,6 +1,7 @@
 import './App.css';
 import axios from 'axios'
 import {useEffect, useState} from "react";
+import Button from "./components/UI/Button";
 
 const url = 'http://localhost:8081/hello'
 
@@ -22,7 +23,13 @@ function App() {
     return (
         <div className='App'>
             <div className='Header'>
-                <h1>Backend says: {hello}</h1>
+                <div className='Title'>
+                    <h1>Backend says: {hello}</h1>
+                </div>
+
+                <div className='Navigation'>
+                    <Button title='Sing-in'/>
+                </div>
             </div>
 
             <div className='MainBody'>
