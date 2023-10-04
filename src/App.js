@@ -1,5 +1,8 @@
 import './App.css';
+import Tooltip from "./components/Tooltip/Tooltip"
 import Button from './components/UI/Button';
+import React, {useState} from "react";
+import LoginForm from "./components/Form/loginForm";
 
 function App() {
 
@@ -23,7 +26,8 @@ function App() {
                 </div>
 
                 <div className='Navigation'>
-                    <Button title='LOG IN'/>
+                    <Button onClick={showSignInTooltip} title='LOG IN'/>
+                    <LoginForm showTooltip={showTooltip}/>
                 </div>
             </div>
 
@@ -36,6 +40,7 @@ function App() {
                 </div>
             </div>
         </div>
+
     );
 }
 
