@@ -3,6 +3,18 @@ import Button from './components/UI/Button';
 
 function App() {
 
+    const [showTooltip, setShowTooltip] = useState(false)
+
+    const handleSignInClick = () => {
+        setShowTooltip((showTooltip) => !showTooltip)
+    }
+
+    const showSignInTooltip = () => {
+        handleSignInClick()
+        console.log('ShowSignInTooltip: ', showTooltip)
+    }
+
+
     return (
         <div className='App'>
             <div className='Header'>

@@ -1,13 +1,11 @@
 import './Button.css'
 import React from 'react';
 
-const Button = ({title, onClick}) => {
-    const handlePress = () => {
-        console.log('button clicked')
-    }
+const Button = props => {
+
     return (
-        <div onClick={handlePress} className='Button'>
-            {title}
+        <div className={`Button ${props.style}`} onClick={props.onClick}>
+            {props.title}
         </div>
     )
 }
