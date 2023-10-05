@@ -1,11 +1,19 @@
 .login-form {
-    border-radius: 16px;
+    border-radius: 1rem;
     padding: 8px 16px;
     background-color: white;
+    color: #1D3C53;
+    font-family: 'Koulen', cursive;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .login-form input {
-    margin-bottom: 16px;
+    border: none;
+    border-bottom: 0.2rem solid #1D3C53;
+
 }
 
 .show {
@@ -20,11 +28,4 @@
 .show.active {
     transform: translateY(-100px) scale(0);
     opacity: 0;
-}
-
-.input {
-    border-bottom: 0.2rem solid #1D3C53;
-    width: 30rem;
-    height: 3rem;
-    flex-shrink: 0;
 }

@@ -1,3 +1,16 @@
+@import "@fontsource/koulen";
+@import "@fontsource/inter";
+
+body {
+  font-family: 'Koulen';
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Inter';
+}
+
+
 .App {
   text-align: center;
 }

@@ -27,7 +27,7 @@ const LoginForm = ({showTooltip}) => {
     }
 
     return (
-        <div className={`${!showTooltip ? "active" : ""} show`}>
+        <div>
             <div className="login-form">
                 <div className="form-box solid">
                     <form>

@@ -1,3 +1,14 @@
-.Tooltip {
-    background: pink;
+.show {
+    display: block;
+    transition: 425ms;
+    position: absolute;
+    right: 30px;
+    opacity: 1;
+    padding-top: 15px;
+    background: white;
+}
+
+.show.active {
+    transform: translateY(-100px) scale(0);
+    opacity: 0;
 }
