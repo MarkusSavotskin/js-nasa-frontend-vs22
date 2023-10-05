@@ -21,3 +21,10 @@
     transform: translateY(-100px) scale(0);
     opacity: 0;
 }
+
+.input {
+    border-bottom: 0.2rem solid #1D3C53;
+    width: 30rem;
+    height: 3rem;
+    flex-shrink: 0;
+}
