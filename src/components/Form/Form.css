@@ -1,0 +1,53 @@
+@import "@fontsource/koulen";
+@import "@fontsource/inter";
+
+.login-form {
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+    background-color: white;
+    color: #1D3C53;
+    font-family: 'Koulen', cursive;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 30rem;
+    text-align: left;
+    user-select: none;
+}
+
+.login-form input {
+    border: none;
+    border-bottom: 0.2rem solid #1D3C53;
+    width: 100%;
+    height: 2rem;
+    font-family: Inter;
+    font-size: 16pt;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.login-form__field {
+    margin-bottom: 2rem;
+}
+
+.login-form__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form__footer p {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.login-form__footer .Button {
+    position: static;
+    margin-top: 0.5rem;
+    padding: 0;
+}

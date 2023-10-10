@@ -1,18 +1,33 @@
 .Button {
-    padding: 8px 16px;
-    color: white;
-    border-radius: 0.5rem;
     font-size: 1.5rem;
+    text-align: center;
+    user-select: none;
 }
 
 .Button:hover {
     cursor: pointer;
 }
 
-.Blue {
-    background: #417DA6;
+.Navbar {
+    color: white;
+    border-radius: 0.5rem;
 }
 
-.Blue:hover {
-    background-color: darkblue;
+.Form {
+    padding: 8px 16px;
+    color: white;
+    background: #417DA6;
+    border-radius: 0.5rem;
+}
+
+.Form:hover {
+    background-color: #1D3C53;
+}
+
+.Footer {
+    color: #1D3C53;
+}
+
+.Footer:hover {
+    color: #417DA6;
 }

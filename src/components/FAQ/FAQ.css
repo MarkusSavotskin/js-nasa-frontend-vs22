@@ -1,0 +1,27 @@
+@import "@fontsource/koulen";
+@import "@fontsource/inter";
+
+.faq-body {
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+    color: #1D3C53;
+    background-color: white;
+    font-weight: 400;
+    line-height: normal;
+    width: 25rem;
+    text-align: left;
+}
+
+.faq-body h1 {
+    font-family: 'Koulen', cursive;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.faq-body p {
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}

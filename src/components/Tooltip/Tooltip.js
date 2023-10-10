@@ -1,14 +1,11 @@
 import React from "react";
-import Container from "../UI/Container";
-
 import './Tooltip.css'
 
 const Tooltip = props => {
-    console.log('tooltip shows: ', props.showTooltip)
-    return (
-        <Container className={`${props.showTooltip ? "active" : ""} show`}>
-            {props.children}
-        </Container>
-    )
+  return (
+      <div className={`${!props.showTooltip ? "active" : ""} ${props.child}`}>
+        {props.children}
+      </div>
+  )
 }
 export default Tooltip
