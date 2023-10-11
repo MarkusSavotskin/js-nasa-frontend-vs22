@@ -41,6 +41,13 @@ function App() {
     }
   }
 
+  const closeTooltip = (tooltip) => {
+    if (tooltip === 'faq') {
+        setShowFAQTooltip(!showFAQTooltip)
+    } else if (tooltip === 'login') {
+        setShowLoginTooltip(!showLoginTooltip)
+    }
+  }
 
   return (
     <div className='App'>
@@ -63,11 +70,17 @@ function App() {
           <div className="col-12">
             <div className="Login-tooltip">
               <Tooltip showTooltip={showLoginTooltip} child='login-tooltip'>
+                <div className="ExitWrapper">
+                  <span className="Exit" onClick={handleLoginClick}/>
+                </div>
                 <Form/>
               </Tooltip>
             </div>
             <div className="FAQ-tooltip">
               <Tooltip showTooltip={showFAQTooltip} child='faq-tooltip'>
+                <div className="ExitWrapper">
+                  <span class="Exit" onClick={handleFAQClick}/>
+                </div>
                 <FAQ/>
               </Tooltip>
             </div>
@@ -77,7 +90,7 @@ function App() {
 
       <div className="container-fluid MainBody">
         <div className="row">
-          <div className="col-lg-12 d-flex pt-5 MainContent">
+          <div className="col-lg-12 d-flex MainContent">
             <div className="col-6">
               <div className="Globe"></div>
             </div>
@@ -93,7 +106,7 @@ function App() {
           <div className="col-12 d-flex">
             <div className="FooterContent">
               <h2>Created by </h2>
-              <span>Markus Savotškin, Karl-Markus Sangerneebo, Hanna-Marii Kriisa</span>
+              <span>Markus Savotškin, Karl-Markus Sangernebo, Hanna-Marii Kriisa</span>
             </div>
           </div>
         </div>

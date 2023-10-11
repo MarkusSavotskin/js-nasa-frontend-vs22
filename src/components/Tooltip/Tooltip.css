@@ -1,3 +1,29 @@
+@media screen and (max-width: 590px) {
+    .Login-tooltip {
+        margin-right: 0 !important;
+    }
+
+    .login-tooltip {
+        right: 0 !important;
+        top: 0 !important;
+        height: 100%;
+        width: 100%;
+        border-radius: 0 !important;
+    }
+
+    .faq-tooltip {
+        top: 0 !important;
+        right: 0!important;
+        height: 100%;
+        width: 100%;
+        border-radius: 0 !important;
+    }
+}
+
+.login-tooltip, .faq-tooltip {
+    z-index: 999;
+}
+
 .Login-tooltip {
     display: flex;
     justify-content: flex-end;
@@ -5,7 +31,8 @@
 }
 
 .login-tooltip {
-    display: block;
+    display: flex;
+    flex-direction: column;
     border-radius: 0.5rem;
     transition: 200ms;
     position: absolute;
@@ -13,7 +40,7 @@
     opacity: 1;
     padding-top: 15px;
     background: white;
-    right: 6rem;
+    right: 7rem;
 }
 
 .login-tooltip.active {
@@ -36,7 +63,7 @@
     opacity: 1;
     padding-top: 15px;
     background: white;
-    right: 4rem;
+    right: 5rem;
 }
 
 .faq-tooltip.active {

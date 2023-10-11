@@ -1,7 +1,34 @@
 @import "@fontsource/koulen";
 @import "@fontsource/inter";
 
+@media screen and (max-width: 590px) {
+  .Exit {
+    display: flex !important;
+    width: 2rem;
+    height: 2rem;
+    background-image: url("/src/img/icon__circle_x_.png");
+    background-size: contain;
+    background-position: center;
+  }
+
+  .ExitWrapper {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-top: 2rem;
+    padding-right: 3rem;
+  }
+}
+
 @media screen and (max-width: 992px) {
+  .MainBody {
+    position: relative;
+  }
+
+  .Footer {
+    position: relative !important;
+  }
+
   .MainContent {
     flex-direction: column;
     align-items: center;
@@ -28,14 +55,14 @@ p {
 
 
 .App {
+  position: relative;
   text-align: center;
-  width: 100vw;
-  height: 100vh;
   background-image: url("./img/Background.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #303845;
+  min-height: 100vh;
 }
 
 .Header {
@@ -52,7 +79,12 @@ p {
   gap: 2rem;
 }
 
+.Exit {
+  display: none;
+}
+
 .MainBody {
+  margin-top: 7rem;
   color: #ffff;
 }
 
@@ -63,13 +95,13 @@ p {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 0;
 }
 
 .Footer {
-  display: flex;
   position: absolute;
   bottom: 0;
-  left: 0;
+  display: flex;
   justify-content: center;
   padding: 3rem;
 }
