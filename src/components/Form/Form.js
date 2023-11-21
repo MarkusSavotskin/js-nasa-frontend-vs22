@@ -9,6 +9,7 @@ const Form = () => {
   const [enteredPassword, setEnteredPassword] = useState('')
   const [enteredEmail, setEnteredEmail] = useState('')
   const [showSignUp, setShowSignUp] = useState(false)
+  const [error, setError] = useState('');
 
   const usernameChangeHandler = (event) => {
     setEnteredUsername(event.target.value)
@@ -26,23 +27,45 @@ const Form = () => {
     setShowSignUp(!showSignUp)
   };
 
-  const loginSubmit = () => {
+  const loginSubmit = (event) => {
+    event.preventDefault(); // Prevents the default form submission behavior
+
     callAPI('POST', '/login', {
       username: enteredUsername,
       password: enteredPassword
     }).then(response => {
-      console.log(response)
-    })
+      if (response.status === "OK") {
+        // Handle successful login, e.g., redirect to a dashboard
+        console.log("Login successful");
+      } else {
+        // Handle login failure
+        setError("Login failed. Please check your credentials.");
+      }
+    }).catch(error => {
+      // Handle API call error
+      setError("An error occurred while logging in.");
+    });
   }
 
-  const signUpSubmit = () => {
+  const signUpSubmit = (event) => {
+    event.preventDefault(); // Prevents the default form submission behavior
+
     callAPI('POST', '/register', {
       username: enteredUsername,
       password: enteredPassword,
       email: enteredEmail
     }).then(response => {
-      console.log(response)
-    })
+      if (response.status === "OK") {
+        // Handle successful registration, e.g., redirect to a dashboard
+        console.log("Registration successful");
+      } else {
+        // Handle registration failure
+        setError("Registration failed. Please try again.");
+      }
+    }).catch(error => {
+      // Handle API call error
+      setError("An error occurred while registering.");
+    });
   }
 
   if (!showSignUp) {
