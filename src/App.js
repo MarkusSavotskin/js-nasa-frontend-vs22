@@ -1,4 +1,4 @@
-import Tooltip from "./components/Tooltip/Tooltip"
+import Tooltip from "./components/Tooltip/Tooltip";
 import Button from './components/UI/Button';
 import React, {useState} from "react";
 import Form from "./components/Form/Form";
@@ -15,6 +15,7 @@ function App() {
 
   const handleLoginClick = () => {
     setShowLoginTooltip(!showLoginTooltip)
+
     if (!showLoginTooltip) {
       closeOtherTooltip('faq')
     }
