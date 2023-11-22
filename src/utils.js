@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const callAPI = async (method, slug, params) => {
-    const host = 'https://localhost:8082'
+    const host = 'https://localhost:8081'
 
     if (method === 'GET') {
         const res = await axios.get(`${host}${slug}`)
