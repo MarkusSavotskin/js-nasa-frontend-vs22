@@ -34,7 +34,7 @@ const Form = () => {
       username: enteredUsername,
       password: enteredPassword
     }).then(response => {
-      if (response.status === "OK") {
+      if (response.status === 200) {
         // Handle successful login, e.g., redirect to a dashboard
         console.log("Login successful");
       } else {
@@ -54,11 +54,11 @@ const Form = () => {
       username: enteredUsername,
       password: enteredPassword,
       email: enteredEmail
-    }).then(response => {
-      if (response.status === "OK") {
+    }).then(res => {
+      if (res.status === 200) {
         // Handle successful registration, e.g., redirect to a dashboard
         console.log("Registration successful");
-      } else {
+      } else if(res. status === 409) {
         // Handle registration failure
         setError("Registration failed. Please try again.");
       }
