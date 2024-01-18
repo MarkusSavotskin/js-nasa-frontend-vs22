@@ -38,6 +38,7 @@
     align-items: center;
     gap: 1rem;
     margin-top: 2rem;
+    width: 100%;
 }
 
 .SearchbarInput {
@@ -68,8 +69,10 @@ textarea:focus, input:focus {
     background-image: url("../../img/icon__chevron_right_.svg");
     background-position: center;
     background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
 }
 
 .ButtonSearch:hover {
     background-image: url("../../img/chevron_right_filled_animated.svg");
+    transition: 0.3s ease-in-out;
 }

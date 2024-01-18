@@ -90,13 +90,15 @@ function App() {
       </div>
 
       <div className="container-fluid MainBody">
-        <div className="row">
-          <div className="col-lg-12 d-flex MainContent">
-            <div className="col-6">
-              <div className="Globe"></div>
-            </div>
-            <div className="col-lg-6 col-md-12 col-sm-12 SearchWrapper">
-              <Searchbar></Searchbar>
+        <div className="container-lg">
+          <div className="row">
+            <div className="col-12 d-flex MainContent">
+              <div className="col-lg-6 col-sm-12">
+                <div className="Globe"></div>
+              </div>
+              <div className="col-lg-6 col-md-12 col-sm-12 SearchWrapper">
+                <Searchbar></Searchbar>
+              </div>
             </div>
           </div>
         </div>
