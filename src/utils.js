@@ -1,4 +1,5 @@
 import axios from "axios";
+// import searchbar from "./components/UI/Searchbar";
 
 export const callAPI = async (method, slug, params) => {
   const host = 'https://192.168.29.220:8081'
@@ -37,7 +38,7 @@ export const callAPI = async (method, slug, params) => {
   }
 }
 
-export const callSatellites = async () => {
+/* export const callSatellites = async () => {
   const host = 'http://192.168.29.220:8008'
 
   try {
@@ -53,12 +54,18 @@ export const callSatellites = async () => {
 
 }
 
-/*
-import {callAPI} from './utils'
+export const callSatelliteById = async (searchInput) => {
+  const host = 'http://192.168.29.220:8008'
 
-const [hello, setHello] = useState();
+  try {
+    const res = await axios.get(`${host}/id/${searchInput}`)
+    console.log(JSON.stringify(res.data))
 
-    useEffect(() => {
-        callAPI('GET', '/hello').then(setHello).catch(console.error)
-    }, []);
- */
+    return JSON.stringify(res)
+
+  } catch (err) {
+    throw err
+    return err
+  }
+
+} */

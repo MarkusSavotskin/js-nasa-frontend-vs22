@@ -60,8 +60,18 @@ function App() {
                 <img className='Image' src='/NSAT.svg' alt=''/>
               </div>
               <div className="Links">
-                <Button className='font-face-gm' style='Navbar' onClick={handleLoginClick} title='LOG IN'/>
-                <Button className='font-face-gm' style='Navbar' onClick={handleFAQClick} title='?'/>
+                    <Button
+                        className='font-face-gm'
+                        style='Navbar'
+                        onClick={handleLoginClick}
+                        title='LOG IN'
+                    />
+                <Button
+                    className='font-face-gm'
+                    style='Navbar'
+                    onClick={handleFAQClick}
+                    title='?'
+                />
               </div>
             </div>
           </div>
@@ -80,9 +90,9 @@ function App() {
             <div className="FAQ-tooltip">
               <Tooltip showTooltip={showFAQTooltip} child='faq-tooltip'>
                 <div className="ExitWrapper">
-                  <span class="Exit" onClick={handleFAQClick}/>
+                  <span className="Exit" onClick={handleFAQClick}/>
                 </div>
-                <FAQ/>
+                <FAQ />
               </Tooltip>
             </div>
           </div>

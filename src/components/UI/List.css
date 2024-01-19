@@ -1,0 +1,49 @@
+@media screen and (max-width: 590px) {
+    .List {
+        flex-display: column;
+    }
+}
+
+.List {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.Content {
+    width: 50%;
+    text-align: left;
+}
+
+.ListItem {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.ListItem::before {
+    display: flex;
+    width: 7rem;
+    height: 7rem;
+    background-image: url("../../img/satellite.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+}
+
+.ListItem span {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.Lat, .Long {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Name {
+    font-size: 36px;
+    font-family: 'Koulen';
+}

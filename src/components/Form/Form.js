@@ -115,7 +115,7 @@ const Form = () => {
 
             {showSignUp && (
                 <div className={`login-form__field`}>
-                  <label  >Email</label>
+                  <label>Email</label>
                   <input className={`${(!enteredEmail && error) && 'error'}`}
                       type="email"
                       name="email"
