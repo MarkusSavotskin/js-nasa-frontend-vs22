@@ -39,19 +39,24 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## NSAT
 
+The NSAT webpage is designed for people who are interested in NASA satellites and space. The main purpose is to give users information about the location of certain satellites orbiting earth. This information is achieved by using official NASA information through their API.
 
 ## User Story
 
-User can log in using an existing user. ---
-https://github.com/MarkusSavotskin/js-nsat-backend-vs22/blob/master/controllers/user.js
-https://github.com/MarkusSavotskin/js-nsat-frontend-vs22/blob/master/src/components/Form/Form.js
+**User can log in using an existing user.**
 
-User can register a new user. ---
 Front - https://github.com/MarkusSavotskin/js-nsat-backend-vs22/blob/master/controllers/user.js
 Back - https://github.com/MarkusSavotskin/js-nsat-frontend-vs22/blob/master/src/components/Form/Form.js
 
-User can search for satellites using the search bar. --- 
+**User can register a new user.**
+
+Front - https://github.com/MarkusSavotskin/js-nsat-backend-vs22/blob/master/controllers/user.js
+Back - https://github.com/MarkusSavotskin/js-nsat-frontend-vs22/blob/master/src/components/Form/Form.js
+
+**User can search for satellites using the search bar.** 
+
 Front - https://github.com/MarkusSavotskin/js-nsat-frontend-vs22/blob/master/src/components/UI/Searchbar.js
 
 ## Design
