@@ -39,6 +39,26 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+
+
+## User Story
+
+User can log in using an existing user. ---
+https://github.com/MarkusSavotskin/js-nsat-backend-vs22/blob/master/controllers/user.js
+https://github.com/MarkusSavotskin/js-nsat-frontend-vs22/blob/master/src/components/Form/Form.js
+
+User can register a new user. ---
+Front - https://github.com/MarkusSavotskin/js-nsat-backend-vs22/blob/master/controllers/user.js
+Back - https://github.com/MarkusSavotskin/js-nsat-frontend-vs22/blob/master/src/components/Form/Form.js
+
+User can search for satellites using the search bar. --- 
+Front - https://github.com/MarkusSavotskin/js-nsat-frontend-vs22/blob/master/src/components/UI/Searchbar.js
+
+## Design
+Figma NSAT design:
+
+https://www.figma.com/file/HkADWLIWO82aBbl9TAtSXZ/NSAT?type=design&node-id=15-22&mode=design
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
